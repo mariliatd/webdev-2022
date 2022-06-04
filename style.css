@@ -1,0 +1,43 @@
+body {
+	background-color: lightblue;
+}
+
+p {
+	margin: 20px;
+}
+
+h1 {
+	color: red;
+	margin: 20px;
+}
+
+h2 {
+	color: black;
+	background-color: lightgrey;
+	border: 3px solid black;
+	border-radius: 8px;
+	padding: 4px 10px 4px;
+	margin: 20px 55% 10px 10px;
+}
+
+h3 {
+	margin: 15px;
+}
+
+.menu {
+	color: black;
+	font-size: 1em;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 4px;
+	margin: 5px 75% 5px 40px;
+}
+
+.menu:hover {
+	background-color: red;
+}
+
+.menu:active {
+	background-color: purple;
+}
