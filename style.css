@@ -1,13 +1,64 @@
-body {
+body{
 	background-color: lightblue;
+  	margin: 0;
 }
 
-h1 {
+#header{
+	height: 125px;
+	background-color: darkorange;
+	border: 1px solid black;
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-grow: 10;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#titulo{
 	color: red;
-	margin: 20px;
 }
 
-h2 {
+#menu{
+	height: 100px;
+	width: 40%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.menu{
+	color: grey;
+	font-size: 1em;
+	background-color: pink;
+	border: 2px solid black;
+	border-radius: 8px;
+	padding: 4px;
+	height: 30px;
+	width: 225px;
+}
+
+.menu:hover{
+	color: black;
+	background-color: red;
+	transition: color 0.5s linear, background-color 1s ease-out;
+}
+
+.menu:active{
+	color: white;
+	background-color: purple;
+	transition: color 0.1s linear, background-color 0.1s ease-out;
+}
+
+
+h1{
+	margin-left: 30px 
+}
+
+h2{
 	color: black;
 	background-color: lightgrey;
 	border: 3px solid black;
@@ -16,30 +67,10 @@ h2 {
 	margin: 20px 55% 10px 10px;
 }
 
-h3 {
-	margin: 15px;
+h3{
+	margin-left: 15px;
 }
 
-.menu {
-	color: grey;
-	font-size: 1em;
-	background-color: pink;
-	border: 2px solid black;
-	border-radius: 8px;
-	padding: 4px;
-	width: 275px;
-    height: 30px;
-    margin: 2.5px 40px;
-}
-
-.menu:hover {
-	color: black;
-	background-color: red;
-	transition: color 0.5s linear, background-color 1s ease-out;
-}
-
-.menu:active {
-	color: white;
-	background-color: purple;
-	transition: color 0.1s linear, background-color 0.1s ease-out;
+p{
+  text-indent: 20px;
 }
