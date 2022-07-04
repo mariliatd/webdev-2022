@@ -1,16 +1,15 @@
 body{
 	background-color: lightblue;
-  	margin: 0;
+	margin: 0;
 }
 
 #header{
-	height: 125px;
+	height: 7em;
 	background-color: darkorange;
-	border: 1px solid black;
+	border: 0.15em solid black;
 	position: sticky;
 	top: 0;
 	display: flex;
-	flex-grow: 10;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
@@ -18,27 +17,29 @@ body{
 
 #titulo{
 	color: red;
+	width: 100%;
+	margin-left: 5%;
 }
 
 #menu{
-	height: 100px;
 	width: 40%;
+	height: 7em;
+	margin-right: 5%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin-right: 30px;
 }
 
 .menu{
 	color: grey;
 	font-size: 1em;
 	background-color: pink;
-	border: 2px solid black;
-	border-radius: 8px;
-	padding: 4px;
-	height: 30px;
-	width: 225px;
+	border: 0.15em solid black;
+	border-radius: 0.6em;
+	padding: 0.3em;
+	height: 2em;
+	width: 15em;
 }
 
 .menu:hover{
@@ -53,24 +54,122 @@ body{
 	transition: color 0.1s linear, background-color 0.1s ease-out;
 }
 
+#corpo{
+	display:flex;
+	justify-content: space-between;
+}
 
-h1{
-	margin-left: 30px 
+#textos{
+	width: 80%;
+	margin-right: 5%;
+}
+  
+.titulo-corpo{
+	margin: 0.8em;
+	width: 50%;
 }
 
 h2{
 	color: black;
 	background-color: lightgrey;
-	border: 3px solid black;
-	border-radius: 8px;
-	padding: 4px 10px 4px;
-	margin: 20px 55% 10px 10px;
-}
-
-h3{
-	margin-left: 15px;
+	border: 0.15em solid black;
+	border-radius: 0.4em;
+ 	padding: 0.2em 0.5em;
+	text-align: center;
 }
 
 p{
-  text-indent: 20px;
+	text-indent: 1em;
+	margin-left: 1em;
+}
+
+h3{
+	margin-left: 1.5em;
+}
+
+#barra-lateral{
+	width: 25%;
+	background-color: darkorange;
+	border: 0.15em solid black;
+	margin-top: 0.8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#titulo-principal-barra{
+	width: 85%;
+}
+
+.titulo-barra{
+	font-family: cursive;
+	color: red;
+	background-color: lightgrey;
+	width: 90%;
+	text-align: center;
+	border: 0.15em solid black;
+	border-radius: 0.3em;
+	padding: 0.2em 0.5em;
+	margin-left: 0em;
+}
+
+img{
+	margin-bottom: 0.5em;
+    max-width: 90%;
+    width: auto;
+    border: 0.15em solid black;
+}
+
+@media (max-width: 750px){
+	
+	#titulo{
+		margin-left: 5%;
+		font-size:1.5em;
+	}
+	
+	#menu{
+		width: 50%;
+		margin-right: 2.5%;
+		height: 50%;
+		justify-content: flex-end;
+	}
+
+	.menu{
+		font-size: 0.65em;
+	}
+
+	#textos{
+		width: 60%;
+	}
+
+	.titulo-corpo{
+		width: 90%;
+	}
+
+	h2{
+		font-size: 0.75em;
+ 	}
+
+	p{
+		font-size: 0.75em;
+	}
+
+	li{
+		font-size: 0.75em;
+	}
+
+	#barra-lateral{
+		width: 35%;
+	}
+	
+	.titulo-barra{
+		width: 85%;
+		font-size: 0.6em;
+	}
+
+	img{
+		border: 0.01em solid black;
+		margin-bottom: 0.01em;
+	    max-width: 95%;
+ 	}
 }
